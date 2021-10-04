@@ -51,10 +51,13 @@ style_mono_light(
 # Objetivos
 
 
-- Gerais: 
+- Geral:
+Comparar os modelos de regressão para dados censurados mais usados segundo a abordagem bayesiana para diferentes porcentagens de censura.
 
 --
 - Especificos:
+Modelo de Cox. 
+Modelo de Poisson.
 
 ---
 
