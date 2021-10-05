@@ -26,42 +26,108 @@ style_mono_light(
 
 # Tema
 
-- Análise de Sobrevivência Bayesiana.
+- Análise de Sobrevivência.
 --
 
 
 - O que é isso? 🤨
 
-![desespero](imgs/01.gif)
+```{r, out.width="50%", fig.align = 'center', echo=FALSE}
+knitr::include_graphics("imgs/01.gif" )
+```
+
+--
+
+É o estudo do tempo de duração esperado até a ocorrência de um evento.
+
 ---
 
 # Problemática
+Os dados de sobrevivência incluem uma variável de interesse denominada tempo de sobrevivência e variáveis independentes.
+--
 
+- Tempo de sobrevivência mede o tempo até o evento de interesse dado um ponto de partida.
+
+--
+
+- Também é sujeito a censura que nos impede de observar o tempo exato de ocorrência do evento desejado. 
+
+--
+
+- Logo, a variável resposta é formada por dados incompletos.
+
+--
 
 ---
+
+## Exemplo:
+
+--
+
+### Estudos clinicos 🏥
+
+Possuem fatores que influenciam no tempo do diagnóstico até o óbito por alguma doença.
+
+--
+
+Desta forma, acompanha-se um grupo de pacientes e se registra o tempo sob observação além de outras caracteristicas relevantes.
+
+--
+
+E no final, temos dois tipos de dados: 
+
+--
+
+- **Completos**: Registram o tempo do óbito.
+
+--
+
+- **Incompletos**: Por causas não controláveis como o realocamento de pacientes em outros hospitais ou mortes não relacionadas a doença observada.
+
+---
+
+
 
 # Hipóteses
 
+Através dos Modelos Cox e Poisson podem ser usados na análise dos dados de sobrevivência apesar da diferença de natureza dependentes. 
+
+--
+
+Onde, no Modelo Cox tem-se que a variável dependente se refere ao tempo de sobrevivência.
+
+--
+
+Enquando, no modelo Poission ela se refere ao número de falhas.
 ---
 
 # Justificativa
+Através de uma abordagem bayesiana verificar o número de censuras nas estimações dando preferência à direita, em diversas simulações com algoritmos Monte Carlo.
 
 ---
 
 # Objetivos
 
 
-- Geral:
+- **Geral**:
 Comparar os modelos de regressão para dados censurados mais usados segundo a abordagem bayesiana para diferentes porcentagens de censura.
 
 --
-- Especificos:
-Modelo de Cox. 
-Modelo de Poisson.
+
+- **Especificos**:
+
+--
+
+- **Modelo de Cox**: Um modelo que investiga a relação entre os preditores e o tempo de sobrevivência através da função de risco.
+--
+
+- **Modelo de Poisson**: Um modelo linear generalizado que ajusta uma regressão para dados de contagem.
 
 ---
 
 # Variáveis
+
+Simulações computacionais de nove estados, utilizando algoritmo Monte Carlo para convergir os modelos independentemente do número de censuras.
 
 ---
 
