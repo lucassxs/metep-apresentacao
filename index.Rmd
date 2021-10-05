@@ -1,7 +1,8 @@
 ---
-title: "Comparação de modelos para a análise de dados censurados à direita 📈"
+title: "Comparação de modelos para a análise de dados censurados à direita 📈 <br> Uma análise por Lucas Stefano Xavier de Sousa"
 author: 
   - Laís Pereira Peixoto de Moraes
+institute: Departamento de Estatística - UEM
 date: "04/10/2021"
 output:
   xaringan::moon_reader:
